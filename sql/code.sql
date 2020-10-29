@@ -6,11 +6,6 @@ CREATE TABLE users (
     username VARCHAR(30) NOT NULL,
     firstname VARCHAR(30) NOT NULL,
     lastname VARCHAR(30) NOT NULL,
-    city VARCHAR(30) NOT NULL,
-    state char(2) NOT NULL,
-    zip INT NOT NULL,
-    latitude DECIMAL(7, 5) NOT NULL,
-    longitude DECIMAL(7, 5) NOT NULL,
     password VARCHAR(255) NOT NULL
 );
 
