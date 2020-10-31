@@ -19,11 +19,12 @@ CREATE TABLE posts (
   ON DELETE CASCADE
 );
 
-
+-- Example Area 
 INSERT INTO topics
 (topic)
 VALUES
 ('politics');
 
+-- Reference 
 DROP TABLE users;
 DROP TABLE posts;
