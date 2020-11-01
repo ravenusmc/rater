@@ -1,17 +1,21 @@
 <?php 	
 
-	class Pages {
+	class Pages extends Controller {
 
 		public function __construct() {
-			echo 'Pages Loaded';
+
 		}
 
 		public function index() {
-			
+			$data = [
+				"title" => "HI"
+			];
+
+			$this->view('pages/index', $data);
 		}
 
-		public function about($id) {
-			echo $id;
+		public function about() {
+			$this->view('pages/about');
 		}
 
 	}
