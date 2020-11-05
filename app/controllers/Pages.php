@@ -10,8 +10,8 @@
 			$posts = $this->postModel->getPosts();
 
 			$data = [
-				"title" => "Index",
-				'posts' => $posts
+				"title" => "Post Rater",
+				"description" => "Write, Post, Rate"
 			];
 
 			$this->view('pages/index', $data);
