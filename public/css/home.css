@@ -1,0 +1,21 @@
+.jumbotron {
+	height: 500px;
+  background-image: url("../images/jumbotron_image.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.jumbotron_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.jumbotron_div_area {
+	border: 2px dotted black;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 30px;
+}
