@@ -1,0 +1,29 @@
+.fa-linkedin-square, .fa-twitter-square, .fa-pencil, .fa-github-square {
+  color: white;
+  margin: 5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #343a40;
+	height: 300px;
+	margin-top: 50px;
+}
+
+.footer_fix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+.footerTitle {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+}
