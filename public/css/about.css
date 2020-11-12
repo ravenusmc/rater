@@ -1,0 +1,41 @@
+.title {
+	font-size: 50px;
+}
+
+.center {
+	text-align: center;
+}
+
+.about_header {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+
+img {
+	border-radius: 10px;
+	width: 80%;
+}
+
+.about_content_area {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+	margin-bottom: 50px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+@media only all and (max-width: 768px) {
+	.pic_div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.about_content_area {
+		grid-template-columns: 1fr;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+}

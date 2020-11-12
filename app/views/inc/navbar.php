@@ -11,7 +11,7 @@
             <a class="nav-link" href="<?php echo URLROOT; ?>">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo URLROOT; ?>/pages/about">About</a>
+            <a class="nav-link" href="<?php echo URLROOT; ?>/pages/about">About Me</a>
           </li>
         </ul>
 
