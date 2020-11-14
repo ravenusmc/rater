@@ -2,10 +2,9 @@
 
 --The code for the user table
 CREATE TABLE users (
-    user_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR(30) NOT NULL,
-    firstname VARCHAR(30) NOT NULL,
-    lastname VARCHAR(30) NOT NULL,
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL,
     password VARCHAR(255) NOT NULL
 );
 

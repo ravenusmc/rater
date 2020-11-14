@@ -7,7 +7,7 @@
 		}
 
 		public function index() {
-			$posts = $this->postModel->getPosts();
+			// $posts = $this->postModel->getPosts();
 
 			$data = [
 				"title" => "Post Rater",
