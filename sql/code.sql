@@ -10,11 +10,12 @@ CREATE TABLE users (
 
 --The code for the blog table
 CREATE TABLE posts (
-  post_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
   user_id INT NOT NULL,
-  post VARCHAR(255) NOT NULL,
+  title VARCHAR(255) NOT NULL,
+  body text NOT NULL,
   votes INT NOT NULL DEFAULT 0,
-  FOREIGN KEY (user_id) REFERENCES users(user_id)
+  FOREIGN KEY (user_id) REFERENCES users(id)
   ON DELETE CASCADE
 );
 
