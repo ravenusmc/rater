@@ -12,8 +12,25 @@
 
   <section>
     <div>
+      <h1>Write</h1>
+    </div>
+    <div class='image_one'>
+    </div>
+  </section>
+
+  <section>
+    <div class='image_two'>
     </div>
     <div>
+      <h1>Post</h1>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <h1>Rate</h1>
+    </div>
+    <div class='image_three'>
     </div>
   </section>
 

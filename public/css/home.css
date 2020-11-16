@@ -19,3 +19,33 @@
 	color: white;
 	padding: 30px;
 }
+
+section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 3em;
+}
+
+.image_one {
+	background-image: url("../images/write.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+
+.image_two {
+	background-image: url("../images/post.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+
+.image_three {
+	background-image: url("../images/rates.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+}
