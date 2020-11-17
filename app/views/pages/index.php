@@ -1,4 +1,5 @@
 <?php require APPROOT . "/views/inc/header.php"; ?>
+<link rel='stylesheet' href="<?php echo URLROOT; ?>/css/generic.css">
 <link rel='stylesheet' href="<?php echo URLROOT; ?>/css/home.css">
 
 <div class="jumbotron jumbotron-fluid text-center jumbotron_container">
@@ -11,8 +12,9 @@
 <main> 
 
   <section>
-    <div>
-      <h1>Write</h1>
+    <div class='description-div'>
+      <h1 class='center font-title-effects'>Write</h1>
+      <p>Have an idea or thought, write it down...</p>
     </div>
     <div class='image_one'>
     </div>
@@ -21,14 +23,16 @@
   <section>
     <div class='image_two'>
     </div>
-    <div>
-      <h1>Post</h1>
+    <div class='description-div'>
+      <h1 class='center font-title-effects'>Post</h1>
+      <p>Post what you write on the site...</p>
     </div>
   </section>
 
   <section>
-    <div>
-      <h1>Rate</h1>
+    <div class='description-div'>
+      <h1 class='center font-title-effects'>Rate</h1>
+      <p>Have your idea rated by others!</p>
     </div>
     <div class='image_three'>
     </div>

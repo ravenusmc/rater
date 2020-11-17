@@ -26,6 +26,17 @@ section {
 	grid-gap: 3em;
 }
 
+.description-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.font-title-effects {
+	text-transform: uppercase;
+}
+
 .image_one {
 	background-image: url("../images/write.jpg");
 	background-size: cover;
