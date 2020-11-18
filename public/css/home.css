@@ -60,3 +60,19 @@ section {
 	background-repeat: no-repeat;
 	height: 300px;
 }
+
+@media only all and (max-width: 1000px){
+
+	section {
+		grid-template-columns: 1fr;
+	}
+
+	.image_one {
+		margin-bottom: 20px;
+	}
+
+	.description-div {
+		margin: 20px 0 20px 0;
+	}
+
+}
