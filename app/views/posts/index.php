@@ -1,6 +1,6 @@
 <?php require APPROOT . "/views/inc/header.php"; ?>
 <link rel='stylesheet' href="<?php echo URLROOT; ?>/css/about.css">
-
+	<?php flash('post_message'); ?>
 	<div class='row mb-3'>
 
 		<div class='col-md-6'>
@@ -8,7 +8,7 @@
 		</div>
 
 		<div class='col-md-6'>
-			<a href="<?php echo URLROOT; ?>/posts/addx" class='btn btn-primary pull-right'>
+			<a href="<?php echo URLROOT; ?>/posts/add" class='btn btn-primary pull-right'>
 				<i class='fa fa-pencil'>Add Posts</i>
 			</a>
 		</div>

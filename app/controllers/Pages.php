@@ -8,6 +8,9 @@
 
 		public function index() {
 			// $posts = $this->postModel->getPosts();
+			if (isLoggedIn()){
+				redirect('posts');
+			}
 
 			$data = [
 				"title" => "Post Rater",

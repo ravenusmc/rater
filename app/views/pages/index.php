@@ -13,7 +13,7 @@
 
   <section>
     <div class='description-div'>
-      <h1 class='center font-title-effects font'>Write</h1>
+      <h1 class='center font-title-effects font font-size'>Write</h1>
       <p class='font'>Have an idea or thought, write it down...</p>
     </div>
     <div class='image_one'>
@@ -24,14 +24,14 @@
     <div class='image_two'>
     </div>
     <div class='description-div'>
-      <h1 class='center font-title-effects font'>Post</h1>
+      <h1 class='center font-title-effects font font-size'>Post</h1>
       <p class='font'>Post what you write on the site...</p>
     </div>
   </section>
 
   <section>
     <div class='description-div'>
-      <h1 class='center font-title-effects font'>Rate</h1>
+      <h1 class='center font-title-effects font font-size'>Rate</h1>
       <p class='font'>Have your idea rated by others!</p>
     </div>
     <div class='image_three'>
