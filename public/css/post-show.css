@@ -1,0 +1,11 @@
+/* The CSS in this file is for the posts show page */
+.rating-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.rate-form {
+	margin-right: 10px;
+}

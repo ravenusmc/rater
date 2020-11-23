@@ -162,4 +162,21 @@
 			}
 		}
 
+		public function rateUp ($id) {
+			if($_SERVER['REQUEST_METHOD'] == 'POST') {
+				echo $id;
+				// Fetch the post 
+				$post = $this->postModel->getPostById($id);
+
+			// 	if($this->postModel->deletePOst($id)) {
+			// 		flash('post_message', 'Post Removed');
+			// 		redirect('posts');
+			// 	}else {
+			// 		die('Something Went Wrong!');
+			// 	}
+			// } else {
+			// 	redirect('posts');
+			}
+		}
+
 	}
