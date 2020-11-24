@@ -164,18 +164,46 @@
 
 		public function rateUp ($id) {
 			if($_SERVER['REQUEST_METHOD'] == 'POST') {
-				echo $id;
+
 				// Fetch the post 
 				$post = $this->postModel->getPostById($id);
+				$votes = 1;
+				$data = [
+					'id' => $id,
+					'votes' => $post->votes
+				];
+				// settype($id, "integer");
+				if($this->postModel->rateUp($data, $votes)) {
+					flash('post_message', 'Point Added to Post');
+					redirect('posts');
+				}else {
+					die('Something Went Wrong!');
+				}
+			} else {
+				redirect('posts');
+			}
+		}
 
-			// 	if($this->postModel->deletePOst($id)) {
-			// 		flash('post_message', 'Post Removed');
-			// 		redirect('posts');
-			// 	}else {
-			// 		die('Something Went Wrong!');
-			// 	}
-			// } else {
-			// 	redirect('posts');
+		public function rateDown ($id) {
+			if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+				// Fetch the post 
+				$post = $this->postModel->getPostById($id);
+				$votes = 1;
+				$data = [
+					'id' => $id,
+					'votes' => $post->votes
+				];
+				echo 'here';
+				// settype($id, "integer");
+				if($this->postModel->rateDown($data, $votes)) {
+					flash('post_message', 'Point Subtracted from Post');
+					redirect('posts');
+				}else {
+					die('Something Went Wrong!');
+				}
+			} else {
+				redirect('posts');
 			}
 		}
 

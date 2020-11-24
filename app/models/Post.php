@@ -14,7 +14,8 @@
 												users.id as userId
 												FROM posts
 												INNER JOIN users
-												ON posts.user_id = users.id");
+												ON posts.user_id = users.id
+												ORDER BY votes DESC");
 			return $results = $this->db->resultSet();
 		}
 
@@ -63,6 +64,38 @@
 			// Execute 
 			if($this->db->execute()){
 					return true; 
+			}else {
+					return false; 
+			}
+		}
+
+		public function rateUp($data, $votes) {
+			$totalVotes = $data['votes'] + $votes;
+			$this->db->query('UPDATE posts SET votes = :votes WHERE id = :id ');
+
+			// Bind Values 
+			$this->db->bind(':id', $data['id']);
+			$this->db->bind(':votes', $totalVotes);
+
+			// Execute 
+			if($this->db->execute()){
+				return true; 
+			}else {
+					return false; 
+			}
+		}
+
+		public function rateDown($data, $votes) {
+			$totalVotes = $data['votes'] - $votes;
+			$this->db->query('UPDATE posts SET votes = :votes WHERE id = :id ');
+
+			// Bind Values 
+			$this->db->bind(':id', $data['id']);
+			$this->db->bind(':votes', $totalVotes);
+
+			// Execute 
+			if($this->db->execute()){
+				return true; 
 			}else {
 					return false; 
 			}

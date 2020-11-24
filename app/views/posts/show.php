@@ -22,7 +22,7 @@
 		<button class='btn btn-success rate-form'><i class="fa fa-thumbs-up"></i></button>
 	</form>
 
-	<form action="<?php echo URLROOT; ?>/posts/rate/<?php echo $data['post']->id; ?>">
+	<form action="<?php echo URLROOT; ?>/posts/rateDown/<?php echo $data['post']->id; ?>" method="post">
 		<button class='btn btn-danger rate-form'><i class="fa fa-thumbs-down"></i></button>
 	</form>
 
